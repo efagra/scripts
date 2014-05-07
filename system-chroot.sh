@@ -7,15 +7,15 @@
 # open a terminal inside the X server (i.e. inside the desktop
 # of the user that is currently logged in), then run the following
 # command which gives permission to anyone to connect to the user's X server:
-xhost + &&
+#xhost + &&
 #
-echo If any proble occurs run the lsblk command for a hint &&
-echo You may wish to check the systemd-nspawn alternative &&
-echo For more tips check the comments inside this script &&
-echo &&
-echo If you want to run GUI apps note the DISPLAY &&
-echo $DISPLAY &&
-echo and export it inside the chroot with export DISPLAY=:0 &&
+#echo If any proble occurs run the lsblk command for a hint &&
+#echo You may wish to check the systemd-nspawn alternative &&
+#echo For more tips check the comments inside this script &&
+#echo &&
+#echo If you want to run GUI apps note the DISPLAY &&
+#echo $DISPLAY &&
+#echo and export it inside the chroot with export DISPLAY=:0 &&
 #
 mkdir /mnt/system-chroot &&
 #
