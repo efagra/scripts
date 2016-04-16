@@ -27,6 +27,7 @@ tar -cf - ~/.gnupg | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP
 tar -cf - ~/.msmtprc | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/msmtp.tar.7z
 tar -cf - ~/.oscrc | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/osc.tar.7z
 tar -cf - ~/.pki | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/pki.tar.7z
+tar -cf - ~/.ssh | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/ssh.tar.7z
 tar -cf - ~/.VirtualBox | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/virtualbox.tar.7z
 tar -cf - ~/.wxcam | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/wxcam.tar.7z
 tar -cf - ~/.xscreensaver | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/xscreensaver

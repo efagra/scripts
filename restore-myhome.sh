@@ -13,7 +13,7 @@ if [ ! -d $BACKUP_DIR ]; then
   exit 2
 fi
 
-cd
+cd /
 
 7z x -so $BACKUP_DIR/mozilla.tar.7z | tar xf -
 7z x -so $BACKUP_DIR/midori.tar.7z | tar xf -
@@ -35,6 +35,7 @@ cd
 7z x -so $BACKUP_DIR/msmtp.tar.7z | tar xf -
 7z x -so $BACKUP_DIR/osc.tar.7z | tar xf -
 7z x -so $BACKUP_DIR/pki.tar.7z | tar xf -
+7z x -so $BACKUP_DIR/ssh.tar.7z | tar xf -
 7z x -so $BACKUP_DIR/virtualbox.tar.7z | tar xf -
 7z x -so $BACKUP_DIR/wxcam.tar.7z | tar xf -
 7z x -so $BACKUP_DIR/xscreensaver.tar.7z | tar xf -
