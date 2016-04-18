@@ -10,6 +10,7 @@ mkdir -p /boot/install
 cd /boot/install
 wget --output-document=oS-13.1.vmlinuz.install http://download.opensuse.org/distribution/13.1/repo/oss/boot/$(uname -i)/loader/linux &&
 wget --output-document=oS-13.1.initrd.install http://download.opensuse.org/distribution/13.1/repo/oss/boot/$(uname -i)/loader/initrd &&
+# wget --output-document=oS-Tumbleweed.vmlinuz.install http://download.opensuse.org/tumbleweed/repo/oss/boot/$(uname -i)/loader/linux && wget --output-document=oS-Tumbleweed.initrd.install http://download.opensuse.org/distribution/13.1/repo/oss/boot/$(uname -i)/loader/initrd
 echo "Add the next lines to your grub boot loader configuration"
 echo "If you are not using grub, then adjust accordinly."
 echo ""
