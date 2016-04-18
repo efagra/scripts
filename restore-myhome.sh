@@ -111,6 +111,6 @@ cd /
 7z x -so $BACKUP_DIR/soundconverter.tar.7z | tar xf -
 7z x -so $BACKUP_DIR/gtranslator.tar.7z | tar xf -
 7z x -so $BACKUP_DIR/teamviewer.tar.7z | tar xf -
-7z x -s0 $BACKUP_DIR/links.tar.7z | tar xf -
+7z x -so $BACKUP_DIR/links.tar.7z | tar xf -
 
 
