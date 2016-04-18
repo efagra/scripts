@@ -64,6 +64,7 @@ mv .wxcam $FAILSAFE_DIR
 mv .xscreensaver $FAILSAFE_DIR
 mv .gconf/SoundConverter $FAILSAFE_DIR/.gconf
 mv .config/gtranslator $FAILSAFE_DIR/.config
+mv .local/share/teamviewer11 $FAILSAFE_DIR/.local/share
 mv bin $FAILSAFE_DIR
 mv data $FAILSAFE_DIR
 mv Downloads $FAILSAFE_DIR
@@ -109,6 +110,7 @@ cd /
 7z x -so $BACKUP_DIR/xscreensaver.tar.7z | tar xf -
 7z x -so $BACKUP_DIR/soundconverter.tar.7z | tar xf -
 7z x -so $BACKUP_DIR/gtranslator.tar.7z | tar xf -
+7z x -so $BACKUP_DIR/teamviewer.tar.7z | tar xf -
 7z x -s0 $BACKUP_DIR/links.tar.7z | tar xf -
 
 

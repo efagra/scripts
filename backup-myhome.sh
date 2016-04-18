@@ -34,6 +34,7 @@ tar -cf - ~/.wxcam | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP
 tar -cf - ~/.xscreensaver | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/xscreensaver
 tar -cf - ~/.gconf/SoundConverter | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/soundconverter.tar.7z
 tar -cf - ~/.config/gtranslator | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/gtranslator.tar.7z
+tar -cf - ~/.local/share/teamviewer11 | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/teamviewer.tar.7z
 tar -cf - ~/bin ~/data ~/Downloads ~/Mail ~/opt ~/src ~/VirtualBox\ VMs ~/workspace ~/Βίντεο ~/Δημόσια ~/Έγγραφα ~/Εικόνες ~/Επιφάνεια\ εργασίας ~/Μουσική ~/Πρότυπα | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32 -ms=on -si $BACKUP_DIR/links.tar.7z
 tar -cf - /etc/fstab /etc/os-release | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/root.tar.7z
 #tar -cf $BACKUP_DIR/root-hostory.tar /root/.bash_history
