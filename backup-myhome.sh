@@ -17,6 +17,7 @@ tar -cf - ~/.config/transmission | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=
 tar -cf - ~/.liferea_1.8 ~/.config/liferea ~/.local/share/liferea ~/.gconf/apps/liferea | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/liferea.tar.7z
 tar -cf - ~/.keychain | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/keychain.tar.7z
 tar -cf - ~/.config/xfce4 ~/.local/share/notes ~/.local/share/keyrings ~/.local/share/applications ~/.local/share/desktop-directories ~/.local/share/mime ~/.config/menus ~/.config/mimeapps.list ~/.config/user-dirs.dirs ~/.config/user-dirs.locale ~/.dmrc | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/xfce.tar.7z
+tar -cf - ~/.config/Thunar | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/thunar.tar.7z
 # Wine soft links to another filesystem in my system
 #tar -cf - ~/.wine | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/wine.tar.7z
 tar -cf - ~/.caff ~/.caffrc | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/caff.tar.7z
@@ -33,5 +34,6 @@ tar -cf - ~/.wxcam | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP
 tar -cf - ~/.xscreensaver | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/xscreensaver
 tar -cf - ~/.gconf/SoundConverter | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/soundconverter.tar.7z
 tar -cf - ~/.config/gtranslator | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/gtranslator.tar.7z
+tar -cf - ~/bin ~/data ~/Downloads ~/Mail ~/opt ~/src ~/VirtualBox\ VMs ~/workspace ~/Βίντεο ~/Δημόσια ~/Έγγραφα ~/Εικόνες ~/Επιφάνεια\ εργασίας ~/Μουσική ~/Πρότυπα | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32 -ms=on -si $BACKUP_DIR/links.tar.7z
 tar -cf - /etc/fstab /etc/os-release | 7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si $BACKUP_DIR/root.tar.7z
-
+#tar -cf $BACKUP_DIR/root-hostory.tar /root/.bash_history
