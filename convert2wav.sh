@@ -1,3 +1,3 @@
 #!/bin/bash
 
-mplayer -ao pcm:file=test.wav -vo null $1
+mplayer -ao pcm:fast:file=${1}.wav -vo null $1
