@@ -38,9 +38,9 @@ chroot /mnt/system-chroot &&
 #umount /mnt/system-chroot/dev &&
 #umount /mnt/system-chroot/sys &&
 #umount /mnt/system-chroot/proc &&
-umount /mnt/system-chroot/{proc,sys,dev} &&
-umount /mnt/system-chroot/laptopboot &&
-umount /mnt/system-chroot &&
+umount -l /mnt/system-chroot/{proc,sys,dev} &&
+umount -l /mnt/system-chroot/laptopboot &&
+umount -l /mnt/system-chroot &&
 #
 rmdir /mnt/system-chroot
 
