@@ -8,15 +8,15 @@ mkdir -p $BACKUP_DIR
 
 tar -cf - ~/.mozilla | $COMPRESS $BACKUP_DIR/mozilla.tar.7z
 tar -cf - ~/.config/midori ~/.local/share/midori | $COMPRESS $BACKUP_DIR/midori.tar.7z
-tar -cf - ~/.claws-mail | $COMPRESS $BACKUP_DIR/claws-mail.tar.7z
+#tar -cf - ~/.claws-mail | $COMPRESS $BACKUP_DIR/claws-mail.tar.7z
 # Thunderbird soft links to another filesystem in my system
 #tar -cf - ~/.thunderbird | $COMPRESS $BACKUP_DIR/thunderbird.tar.7z
 tar -cf - ~/.purple | $COMPRESS $BACKUP_DIR/pidgin.tar.7z
-tar -cf - ~/.Skype ~/.config/Skype | $COMPRESS $BACKUP_DIR/skype.tar.7z
+#tar -cf - ~/.Skype ~/.config/Skype | $COMPRESS $BACKUP_DIR/skype.tar.7z
 tar -cf - ~/.xchat2 | $COMPRESS $BACKUP_DIR/xchat.tar.7z
 tar -cf - ~/.config/transmission | $COMPRESS $BACKUP_DIR/transmission.tar.7z
 tar -cf - ~/.liferea_1.8 ~/.config/liferea ~/.local/share/liferea ~/.gconf/apps/liferea | $COMPRESS $BACKUP_DIR/liferea.tar.7z
-tar -cf - ~/.keychain | $COMPRESS $BACKUP_DIR/keychain.tar.7z
+tar -cf - ~/.keychain | $COMPRESS $BACKUP_DIR/keychain.tar.15z
 tar -cf - ~/.config/xfce4 ~/.local/share/notes ~/.local/share/keyrings ~/.local/share/applications ~/.local/share/desktop-directories ~/.local/share/mime ~/.config/menus ~/.config/mimeapps.list ~/.config/user-dirs.dirs ~/.config/user-dirs.locale ~/.dmrc ~/.config/dconf | $COMPRESS $BACKUP_DIR/xfce.tar.7z
 tar -cf - ~/.config/Thunar | $COMPRESS $BACKUP_DIR/thunar.tar.7z
 # Wine soft links to another filesystem in my system
