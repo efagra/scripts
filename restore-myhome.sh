@@ -6,7 +6,7 @@ export FAILSAFE_DIR=orig
 
 if [[ -z "$1" ]]; then
   echo need one of the following stamps:
-  ls /media/data/Downloads/backups/efagra-laptop-home/
+  ls /home/data/Downloads/backups/efagra-laptop-home/
   exit 1
 fi
 if [ ! -d $BACKUP_DIR ]; then
