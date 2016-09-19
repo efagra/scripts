@@ -21,6 +21,8 @@ tar -cf - ~/.liferea_1.8 ~/.config/liferea ~/.local/share/liferea ~/.gconf/apps/
 tar -cf - ~/.keychain | $COMPRESS $BACKUP_DIR/keychain.tar.15z
 # No need to backup xfce desktop environment confs at this point
 #tar -cf - ~/.config/xfce4 ~/.local/share/notes ~/.local/share/keyrings ~/.local/share/applications ~/.local/share/desktop-directories ~/.local/share/mime ~/.config/menus ~/.config/mimeapps.list ~/.config/user-dirs.dirs ~/.config/user-dirs.locale ~/.dmrc ~/.config/dconf | $COMPRESS $BACKUP_DIR/xfce.tar.7z
+# But backup some desktop variables common between desktop environments.
+tar -cf - ~/.local/share/notes ~/.local/share/keyrings ~/.local/share/applications ~/.local/share/desktop-directories ~/.local/share/mime ~/.config/menus ~/.config/mimeapps.list ~/.config/user-dirs.dirs ~/.config/user-dirs.locale ~/.dmrc ~/.config/dconf | $COMPRESS $BACKUP_DIR/desktop-env-misc.tar.7z
 #tar -cf - ~/.config/Thunar | $COMPRESS $BACKUP_DIR/thunar.tar.7z
 # Wine soft links to another filesystem in my system
 #tar -cf - ~/.wine | $COMPRESS $BACKUP_DIR/wine.tar.7z
