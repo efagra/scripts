@@ -36,3 +36,5 @@ ln -s data/Music
 rmdir Templates
 ln -s data/Πρότυπα Templates
 
+ln -s data/conf/skype/ .Skype
+ln -s data/conf/claws-mail/ .claws-mail
