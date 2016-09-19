@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export STAMP=$1
-export BACKUP_DIR=/media/data/Downloads/backups/efagra-laptop-home/$STAMP/
+export BACKUP_DIR=/home/data/Downloads/backups/efagra-laptop-home/$STAMP/
 export FAILSAFE_DIR=orig
 
 if [[ -z "$1" ]]; then
@@ -85,10 +85,10 @@ cd /
 
 7z x -so $BACKUP_DIR/mozilla.tar.7z | tar xf -
 7z x -so $BACKUP_DIR/midori.tar.7z | tar xf -
-7z x -so $BACKUP_DIR/claws-mail.tar.7z | tar xf -
+#7z x -so $BACKUP_DIR/claws-mail.tar.7z | tar xf -
 #7z x -so $BACKUP_DIR/thunderbird.tar.7z | tar xf -
 7z x -so $BACKUP_DIR/pidgin.tar.7z | tar xf -
-7z x -so $BACKUP_DIR/skype.tar.7z | tar xf -
+#7z x -so $BACKUP_DIR/skype.tar.7z | tar xf -
 7z x -so $BACKUP_DIR/xchat.tar.7z | tar xf -
 7z x -so $BACKUP_DIR/transmission.tar.7z | tar xf -
 7z x -so $BACKUP_DIR/liferea.tar.7z | tar xf -
