@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export STAMP=`date +%Y%m%d%H%M%S`
-export BACKUP_DIR=/media/data/Downloads/backups/efagra-laptop-home/$STAMP/
+export BACKUP_DIR=/home/data/Downloads/backups/efagra-laptop-home/$STAMP/
 export COMPRESS="7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on -si"
 
 mkdir -p $BACKUP_DIR
@@ -38,4 +38,4 @@ tar -cf - ~/.config/gtranslator | $COMPRESS $BACKUP_DIR/gtranslator.tar.7z
 tar -cf - ~/.local/share/teamviewer11 | $COMPRESS $BACKUP_DIR/teamviewer.tar.7z
 tar -cf - ~/bin ~/data ~/Downloads ~/Mail ~/opt ~/src ~/VirtualBox\ VMs ~/workspace ~/Βίντεο ~/Δημόσια ~/Έγγραφα ~/Εικόνες ~/Επιφάνεια\ εργασίας ~/Μουσική ~/Πρότυπα | $COMPRESS $BACKUP_DIR/links.tar.7z
 tar -cf - /etc/fstab /etc/os-release | $COMPRESS $BACKUP_DIR/root.tar.7z
-#tar -cf $BACKUP_DIR/root-hostory.tar /root/.bash_history
+#tar -cf $BACKUP_DIR/root-history.tar /root/.bash_history
