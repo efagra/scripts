@@ -64,7 +64,7 @@ mv .wxcam $FAILSAFE_DIR/
 mv .xscreensaver $FAILSAFE_DIR/
 mv .gconf/apps/SoundConverter $FAILSAFE_DIR/.gconf/apps/
 mv .config/gtranslator $FAILSAFE_DIR/.config/
-mv .local/share/teamviewer11 $FAILSAFE_DIR/.local/share/
+mv .local/share/teamviewer $FAILSAFE_DIR/.local/share/
 #mv bin $FAILSAFE_DIR/
 #mv data $FAILSAFE_DIR/
 #mv Downloads $FAILSAFE_DIR/
