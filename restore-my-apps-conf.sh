@@ -90,6 +90,7 @@ cd /
 7z x -so $BACKUP_DIR/pidgin.tar.7z | tar xf -
 #7z x -so $BACKUP_DIR/skype.tar.7z | tar xf -
 7z x -so $BACKUP_DIR/xchat.tar.7z | tar xf -
+7z x -so $BACKUP_DIR/hexchat.tar.7z | tar xf -
 7z x -so $BACKUP_DIR/transmission.tar.7z | tar xf -
 7z x -so $BACKUP_DIR/liferea.tar.7z | tar xf -
 7z x -so $BACKUP_DIR/keychain.tar.7z | tar xf -

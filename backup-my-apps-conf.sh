@@ -16,6 +16,7 @@ tar -cf - ~/.purple | $COMPRESS $BACKUP_DIR/pidgin.tar.7z
 # Skype soft links to another filesystem in my system
 #tar -cf - ~/.Skype ~/.config/Skype | $COMPRESS $BACKUP_DIR/skype.tar.7z
 tar -cf - ~/.xchat2 | $COMPRESS $BACKUP_DIR/xchat.tar.7z
+tar -cf - ~/.config/hexchat | $COMPRESS $BACKUP_DIR/hexchat.tar.7z
 tar -cf - ~/.config/transmission | $COMPRESS $BACKUP_DIR/transmission.tar.7z
 tar -cf - ~/.liferea_1.8 ~/.config/liferea ~/.local/share/liferea ~/.gconf/apps/liferea | $COMPRESS $BACKUP_DIR/liferea.tar.7z
 tar -cf - ~/.keychain | $COMPRESS $BACKUP_DIR/keychain.tar.15z
