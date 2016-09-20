@@ -35,7 +35,7 @@ tar -cf - ~/.wxcam | $COMPRESS $BACKUP_DIR/wxcam.tar.7z
 tar -cf - ~/.xscreensaver | $COMPRESS $BACKUP_DIR/xscreensaver.tar.7z
 tar -cf - ~/.gconf/apps/SoundConverter | $COMPRESS $BACKUP_DIR/soundconverter.tar.7z
 tar -cf - ~/.config/gtranslator | $COMPRESS $BACKUP_DIR/gtranslator.tar.7z
-tar -cf - ~/.local/share/teamviewer11 | $COMPRESS $BACKUP_DIR/teamviewer.tar.7z
+tar -cf - ~/.local/share/teamviewer | $COMPRESS $BACKUP_DIR/teamviewer.tar.7z
 tar -cf - ~/bin ~/data ~/Downloads ~/Mail ~/opt ~/src ~/VirtualBox\ VMs ~/workspace ~/Βίντεο ~/Δημόσια ~/Έγγραφα ~/Εικόνες ~/Επιφάνεια\ εργασίας ~/Μουσική ~/Πρότυπα .thunderbird .wine .claws-mail .Skype | $COMPRESS $BACKUP_DIR/links.tar.7z
 tar -cf - /etc/fstab /etc/os-release | $COMPRESS $BACKUP_DIR/root.tar.7z
 #tar -cf $BACKUP_DIR/root-history.tar /root/.bash_history
