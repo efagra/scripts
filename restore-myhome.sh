@@ -29,6 +29,7 @@ mv .thunderbird $FAILSAFE_DIR/
 mv .purple $FAILSAFE_DIR/
 mv .Skype $FAILSAFE_DIR/
 mv .xchat2 $FAILSAFE_DIR/
+mv .config/hexchat $FAILSAFE_DIR/.config/
 mv .config/transmission $FAILSAFE_DIR/.config/
 mv .liferea_1.8 $FAILSAFE_DIR/
 mv .config/liferea $FAILSAFE_DIR/.config/
