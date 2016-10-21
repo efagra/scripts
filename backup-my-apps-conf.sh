@@ -24,7 +24,7 @@ tar -cf - ~/.keychain | $COMPRESS $BACKUP_DIR/keychain.tar.15z
 #tar -cf - ~/.config/xfce4 ~/.local/share/notes ~/.local/share/keyrings ~/.local/share/applications ~/.local/share/desktop-directories ~/.local/share/mime ~/.config/menus ~/.config/mimeapps.list ~/.config/user-dirs.dirs ~/.config/user-dirs.locale ~/.dmrc ~/.config/dconf | $COMPRESS $BACKUP_DIR/xfce.tar.7z
 # But backup some desktop variables common between desktop environments.
 tar -cf - ~/.local/share/notes ~/.local/share/keyrings ~/.local/share/applications ~/.local/share/desktop-directories ~/.local/share/mime ~/.config/menus ~/.config/mimeapps.list ~/.config/user-dirs.dirs ~/.config/user-dirs.locale ~/.dmrc ~/.config/dconf | $COMPRESS $BACKUP_DIR/desktop-env-misc.tar.7z
-#tar -cf - ~/.config/Thunar | $COMPRESS $BACKUP_DIR/thunar.tar.7z
+tar -cf - ~/.config/Thunar | $COMPRESS $BACKUP_DIR/thunar.tar.7z
 # Wine soft links to another filesystem in my system
 #tar -cf - ~/.wine | $COMPRESS $BACKUP_DIR/wine.tar.7z
 tar -cf - ~/.caff ~/.caffrc | $COMPRESS $BACKUP_DIR/caff.tar.7z
@@ -34,7 +34,7 @@ tar -cf - ~/.gitconfig ~/.gitignore | $COMPRESS $BACKUP_DIR/git.tar.7z
 tar -cf - ~/.gnupg | $COMPRESS $BACKUP_DIR/gnupg.tar.7z
 tar -cf - ~/.msmtprc | $COMPRESS $BACKUP_DIR/msmtp.tar.7z
 tar -cf - ~/.oscrc | $COMPRESS $BACKUP_DIR/osc.tar.7z
-tar -cf - ~/.pki | $COMPRESS $BACKUP_DIR/pki.tar.7z
+#tar -cf - ~/.pki | $COMPRESS $BACKUP_DIR/pki.tar.7z
 tar -cf - ~/.ssh | $COMPRESS $BACKUP_DIR/ssh.tar.7z
 tar -cf - ~/.VirtualBox | $COMPRESS $BACKUP_DIR/virtualbox.tar.7z
 tar -cf - ~/.wxcam | $COMPRESS $BACKUP_DIR/wxcam.tar.7z

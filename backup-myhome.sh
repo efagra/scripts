@@ -29,7 +29,7 @@ tar -cf - ~/.gitconfig ~/.gitignore | $COMPRESS $BACKUP_DIR/git.tar.7z
 tar -cf - ~/.gnupg | $COMPRESS $BACKUP_DIR/gnupg.tar.7z
 tar -cf - ~/.msmtprc | $COMPRESS $BACKUP_DIR/msmtp.tar.7z
 tar -cf - ~/.oscrc | $COMPRESS $BACKUP_DIR/osc.tar.7z
-tar -cf - ~/.pki | $COMPRESS $BACKUP_DIR/pki.tar.7z
+#tar -cf - ~/.pki | $COMPRESS $BACKUP_DIR/pki.tar.7z
 tar -cf - ~/.ssh | $COMPRESS $BACKUP_DIR/ssh.tar.7z
 tar -cf - ~/.VirtualBox | $COMPRESS $BACKUP_DIR/virtualbox.tar.7z
 tar -cf - ~/.wxcam | $COMPRESS $BACKUP_DIR/wxcam.tar.7z
