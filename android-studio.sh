@@ -1,6 +1,6 @@
 #!/bin/bash
 
-STUDIO_JDK=~/opt/java/jdk
+export STUDIO_JDK=~/opt/java/jdk
 
 ~/opt/android-studio/bin/studio.sh
 
